@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://bga5u2cdegwtx"]
+
+[ext_resource type="Script" path="res://Scripts/Hand.gd" id="1_e14id"]
+[ext_resource type="PackedScene" uid="uid://dv245skf1senn" path="res://Scenes/UI/card.tscn" id="2_d4t6j"]
+[ext_resource type="Resource" uid="uid://pocm4274evti" path="res://Resources/Actions/test_action_data.tres" id="2_ygyg6"]
+[ext_resource type="PackedScene" uid="uid://c3hr4qijvrt6k" path="res://Scenes/UI/grid.tscn" id="4_5rohi"]
+
+[node name="Main" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hand" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -193.5
+offset_top = -172.0
+offset_right = 193.5
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_e14id")
+actions = Array[Resource("res://Scripts/Resources/ActionData.gd")]([ExtResource("2_ygyg6"), ExtResource("2_ygyg6")])
+card_packed_scene = ExtResource("2_d4t6j")
+
+[node name="grid" parent="Control" instance=ExtResource("4_5rohi")]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = 584.0
+offset_top = -270.0
+offset_right = 764.32
+offset_bottom = -116.6
+grow_horizontal = 1

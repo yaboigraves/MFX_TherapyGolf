@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv245skf1senn"]
+
+[ext_resource type="Texture2D" uid="uid://dxcaprrdauqds" path="res://Textures/test_record_texture.jpg" id="1_672jh"]
+[ext_resource type="Script" path="res://Scripts/Card.gd" id="2_g0ruh"]
+
+[node name="Card" type="TextureRect"]
+custom_minimum_size = Vector2(200, 0)
+size_flags_vertical = 4
+texture = ExtResource("1_672jh")
+expand_mode = 5
+script = ExtResource("2_g0ruh")

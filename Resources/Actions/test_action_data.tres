@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ActionData" load_steps=4 format=3 uid="uid://pocm4274evti"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/ActionData.gd" id="1_4mut1"]
+[ext_resource type="Resource" uid="uid://b657sc2xndqtu" path="res://Resources/Effects/test_effect.tres" id="1_lkiw0"]
+[ext_resource type="Texture2D" uid="uid://dxcaprrdauqds" path="res://Textures/test_record_texture.jpg" id="3_rqb24"]
+
+[resource]
+script = ExtResource("1_4mut1")
+texture = ExtResource("3_rqb24")
+lane = null
+effects = Array[Resource("res://Scripts/Effect.gd")]([ExtResource("1_lkiw0")])
