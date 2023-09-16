@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bga5u2cdegwtx"]
+[gd_scene load_steps=6 format=3 uid="uid://bga5u2cdegwtx"]
 
 [ext_resource type="Script" path="res://Scripts/Hand.gd" id="1_e14id"]
 [ext_resource type="PackedScene" uid="uid://dv245skf1senn" path="res://Scenes/UI/card.tscn" id="2_d4t6j"]
 [ext_resource type="Resource" uid="uid://pocm4274evti" path="res://Resources/Actions/test_action_data.tres" id="2_ygyg6"]
 [ext_resource type="PackedScene" uid="uid://c3hr4qijvrt6k" path="res://Scenes/UI/grid.tscn" id="4_5rohi"]
+[ext_resource type="Texture2D" uid="uid://cdqwdbymvm7c" path="res://Textures/White_Circle.svg.png" id="5_d3ybn"]
 
 [node name="Main" type="Node"]
 
@@ -42,3 +43,13 @@ offset_top = -270.0
 offset_right = 764.32
 offset_bottom = -116.6
 grow_horizontal = 1
+
+[node name="VibeMeter" type="Sprite2D" parent="."]
+position = Vector2(1711, 867)
+scale = Vector2(0.30375, 0.30375)
+texture = ExtResource("5_d3ybn")
+
+[node name="VibeVector" type="Sprite2D" parent="VibeMeter"]
+self_modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.0689299, 0.0689299)
+texture = ExtResource("5_d3ybn")
