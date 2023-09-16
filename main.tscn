@@ -40,8 +40,8 @@ anchor_right = 0.0
 anchor_bottom = 0.5
 offset_left = 584.0
 offset_top = -270.0
-offset_right = 764.32
-offset_bottom = -116.6
+offset_right = 1536.0
+offset_bottom = -117.0
 grow_horizontal = 1
 
 [node name="VibeMeter" type="Sprite2D" parent="."]
