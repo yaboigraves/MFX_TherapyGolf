@@ -29,7 +29,7 @@ offset_right = 193.5
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("1_e14id")
-actions = Array[Resource("res://Scripts/Resources/ActionData.gd")]([ExtResource("2_ygyg6"), ExtResource("2_ygyg6")])
+actions = Array[Resource("res://Scripts/Resources/ActionData.gd")]([ExtResource("2_ygyg6"), ExtResource("2_ygyg6"), ExtResource("2_ygyg6"), ExtResource("2_ygyg6"), ExtResource("2_ygyg6"), ExtResource("2_ygyg6"), ExtResource("2_ygyg6"), ExtResource("2_ygyg6")])
 card_packed_scene = ExtResource("2_d4t6j")
 
 [node name="grid" parent="Control" instance=ExtResource("4_5rohi")]

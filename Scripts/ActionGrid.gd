@@ -2,7 +2,7 @@ class_name ActionGrid
 extends Node
 
 #so every columns entries is one row
-
+#bingus
 
 func CompileGrid():
 	var action_squares : Array
