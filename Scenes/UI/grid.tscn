@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3hr4qijvrt6k"]
+[gd_scene load_steps=5 format=3 uid="uid://c3hr4qijvrt6k"]
 
 [ext_resource type="Script" path="res://Scripts/ActionGrid.gd" id="1_kbpx2"]
 [ext_resource type="Script" path="res://Scripts/grid_square.gd" id="1_nj2c4"]
+[ext_resource type="PackedScene" uid="uid://ehq7736r2o67" path="res://Scenes/UI/AimRadial.tscn" id="3_u5002"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7npaa"]
 
@@ -32,6 +33,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect2" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -41,6 +43,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect3" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -50,6 +53,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect4" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -59,6 +63,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect5" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -68,6 +73,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect6" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -77,6 +83,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect7" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -86,6 +93,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect8" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -95,6 +103,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect9" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -104,6 +113,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect10" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -113,6 +123,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect11" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -122,6 +133,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect12" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -131,6 +143,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect13" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -140,6 +153,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect14" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -149,6 +163,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect15" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -158,6 +173,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect16" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -167,6 +183,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect17" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -176,6 +193,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect18" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -185,6 +203,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect19" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -194,6 +213,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect20" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -203,6 +223,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect21" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -212,6 +233,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect22" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -221,6 +243,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect23" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -230,6 +253,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect24" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -239,6 +263,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect25" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -248,6 +273,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect26" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -257,6 +283,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect27" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -266,6 +293,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect28" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -275,6 +303,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect29" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -284,6 +313,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect30" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -293,6 +323,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect31" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -302,6 +333,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="ColorRect32" type="TextureRect" parent="GridContainer"]
 custom_minimum_size = Vector2(90, 90)
@@ -311,6 +343,7 @@ size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_7npaa")
 expand_mode = 5
 script = ExtResource("1_nj2c4")
+aim_radial = ExtResource("3_u5002")
 
 [node name="EndTurnButton" type="Button" parent="."]
 layout_mode = 1
@@ -334,5 +367,8 @@ offset_top = 98.0
 offset_right = 221.0
 offset_bottom = 155.0
 grow_horizontal = 0
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
 
 [connection signal="pressed" from="EndTurnButton" to="." method="_on_end_turn_button_pressed"]

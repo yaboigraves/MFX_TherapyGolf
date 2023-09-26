@@ -1,22 +1,51 @@
 class_name ActionGrid
 extends Node
 
-#so every columns entries is one row
-#bingus
+signal TimeSliceReady
+
+
 
 func CompileGrid():
 	var action_squares : Array
 	
-	for child in $GridContainer.get_children():
-		if child.action_data != null:
-			action_squares.append(child)
-	
-	var delta = Vector2i()
-	for action_square in action_squares:
-		print(action_square.action_data.effects[0].vibe_delta)
-		delta += action_square.action_data.effects[0].vibe_delta
-	print(delta)
+	for i in range(8):
+		#go over each row with a wait
+		var squares = GetBeatSquares(i)
 
+		TimeSliceReady.emit(squares)
+		#so here is where we can process the squares in a sep function
+		#but they can emit to main
+		#main should actually process these probably
+		#take a row of squares, hand it off to main and it handles it
+		
+		
+
+
+
+
+
+
+		
+		for square in squares:
+			square.self_modulate = Color.RED
+		
+		$Timer.start()
+		await  $Timer.timeout
+		
+	for square in $GridContainer.get_children():
+		square.self_modulate = Color.WHITE
+	
+
+func GetBeatSquares(beat: int):
+	var squares = []
+	
+	for i in range(beat, $GridContainer.get_child_count(), 8):
+		squares.append($GridContainer.get_child(i))
+
+	#flip so bottom lane is first
+	squares.reverse()
+	
+	return squares
 
 func _on_end_turn_button_pressed() -> void:
 	CompileGrid()

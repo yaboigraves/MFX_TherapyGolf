@@ -1,12 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://bga5u2cdegwtx"]
+[gd_scene load_steps=9 format=3 uid="uid://bga5u2cdegwtx"]
 
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_1oxyu"]
 [ext_resource type="Script" path="res://Scripts/Hand.gd" id="1_e14id"]
 [ext_resource type="PackedScene" uid="uid://dv245skf1senn" path="res://Scenes/UI/card.tscn" id="2_d4t6j"]
 [ext_resource type="Resource" uid="uid://pocm4274evti" path="res://Resources/Actions/test_action_data.tres" id="2_ygyg6"]
 [ext_resource type="PackedScene" uid="uid://c3hr4qijvrt6k" path="res://Scenes/UI/grid.tscn" id="4_5rohi"]
 [ext_resource type="Texture2D" uid="uid://cdqwdbymvm7c" path="res://Textures/White_Circle.svg.png" id="5_d3ybn"]
+[ext_resource type="Script" path="res://Scripts/UI/VibeMeter.gd" id="7_rp62e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lctqt"]
+radius = 600.0
 
 [node name="Main" type="Node"]
+script = ExtResource("1_1oxyu")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -48,8 +54,50 @@ grow_horizontal = 1
 position = Vector2(1711, 867)
 scale = Vector2(0.30375, 0.30375)
 texture = ExtResource("5_d3ybn")
+script = ExtResource("7_rp62e")
 
 [node name="VibeVector" type="Sprite2D" parent="VibeMeter"]
 self_modulate = Color(0, 0, 0, 1)
+position = Vector2(23.0469, 9.87891)
 scale = Vector2(0.0689299, 0.0689299)
 texture = ExtResource("5_d3ybn")
+
+[node name="Area2D" type="Area2D" parent="VibeMeter/VibeVector"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VibeMeter/VibeVector/Area2D"]
+shape = SubResource("CircleShape2D_lctqt")
+
+[node name="VibeTarget" type="Sprite2D" parent="VibeMeter"]
+self_modulate = Color(0.643137, 0.631373, 1, 0.615686)
+position = Vector2(-138.271, -65.8438)
+scale = Vector2(0.165295, 0.165295)
+texture = ExtResource("5_d3ybn")
+
+[node name="Area2D" type="Area2D" parent="VibeMeter/VibeTarget"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VibeMeter/VibeTarget/Area2D"]
+shape = SubResource("CircleShape2D_lctqt")
+
+[node name="VibeTarget2" type="Sprite2D" parent="VibeMeter"]
+self_modulate = Color(0.643137, 0.631373, 1, 0.615686)
+position = Vector2(335.803, 141.563)
+scale = Vector2(0.165295, 0.165295)
+texture = ExtResource("5_d3ybn")
+
+[node name="Area2D" type="Area2D" parent="VibeMeter/VibeTarget2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VibeMeter/VibeTarget2/Area2D"]
+shape = SubResource("CircleShape2D_lctqt")
+
+[node name="VibeTarget3" type="Sprite2D" parent="VibeMeter"]
+self_modulate = Color(0.643137, 0.631373, 1, 0.615686)
+position = Vector2(-355.555, 187.654)
+scale = Vector2(0.165295, 0.165295)
+texture = ExtResource("5_d3ybn")
+
+[node name="Area2D" type="Area2D" parent="VibeMeter/VibeTarget3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VibeMeter/VibeTarget3/Area2D"]
+shape = SubResource("CircleShape2D_lctqt")
+
+[connection signal="area_entered" from="VibeMeter/VibeVector/Area2D" to="VibeMeter" method="_on_area_2d_area_entered"]
