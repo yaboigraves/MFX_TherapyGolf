@@ -8,7 +8,7 @@ signal TimeSliceReady
 func CompileGrid():
 	var action_squares : Array
 	
-	for i in range(8):
+	for i in range(4):
 		#go over each row with a wait
 		var squares = GetBeatSquares(i)
 
@@ -39,7 +39,7 @@ func CompileGrid():
 func GetBeatSquares(beat: int):
 	var squares = []
 	
-	for i in range(beat, $GridContainer.get_child_count(), 8):
+	for i in range(beat, $GridContainer.get_child_count(), 4):
 		squares.append($GridContainer.get_child(i))
 
 	#flip so bottom lane is first
